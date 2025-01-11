@@ -32,7 +32,8 @@ python3 -m venv pec4
 source pec4/bin/activate
 ```  
 ```Windows:
-pec4\Scripts\activate```  
+pec4\Scripts\activate
+```  
 
 Para eliminar el entorno, símplemente desactiva el entorno...:  
 ```
