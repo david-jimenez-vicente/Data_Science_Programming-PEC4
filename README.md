@@ -28,10 +28,12 @@ Se aconseja crear un entorno virtual para este proyecto:
 ```
 python3 -m venv pec4
 ```  
-```Mac/Linux:
+Mac/Linux:  
+```
 source pec4/bin/activate
 ```  
-```Windows:
+Windows:  
+```
 pec4\Scripts\activate
 ```  
 
