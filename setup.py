@@ -12,6 +12,12 @@ setup(
     include_package_data=True,
     install_requires=[
         'pandas',
+        'numpy',
+        'matplotlib',
+        'faker',
+        'pytest',
+        'pytest-cov',
+        'pylint',
     ],
     entry_points={
         'console_scripts': [
