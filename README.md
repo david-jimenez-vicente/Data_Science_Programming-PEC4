@@ -31,7 +31,7 @@ Una vez en el directorio local del proyecto, hay 2 maneras de usar el programa: 
 
 - Opción 1. Ejecutarlo sin instalar:  
     - a) Este proyecto utiliza Python y depende de las siguientes librerías:  
-      - `pandas`
+      - `pandas`  
        Para instalarla ejecuta:  
         ```
         pip install -r requirements.txt
