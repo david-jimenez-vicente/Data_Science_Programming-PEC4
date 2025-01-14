@@ -87,10 +87,12 @@ Al abrir el programa, verás el menú de ejecución. Permite ejecutar todos los 
    - Opción `0`: Salir del programa.
 
 ## Tests de ejecución
-En la carpeta `tests/` se incluye un módulo de test para cada módulo de ejercicio.
-Para los test se ha usado la librería `pytest`, y se ha añadido el plugin de pytest `pytest-cov`, que revisa la cobertura de las pruebas al ejecutar cada test.  
-
-Cada módulo incluye una función de tests que valida su funcionalidad.  
+En la carpeta `tests/` se incluye un módulo de test para cada módulo de ejercicio.  
+Para los test se ha usado la librería `pytest`, y se ha añadido el plugin de pytest `pytest-cov`, que revisa la cobertura de las pruebas al ejecutar cada test. La cobertura de un test es el % de líneas de código que se han ejecutado en la prueba del script testeado.  
+Al ejecutarse, `pytest` realiza una batería de pruebas predefinidas con condiciones que deben cumplirse. Cuantas más situaciones posibles preveas para las pruebas, mayor cobertura tendrá el test.  
+El resultado será un listado con el progreso del test. En verde aparecerá todo lo correcto, y si hay errores en la ejecución de las pruebas, se verán en rojo, para poder localizar el código a corregir más fácilmente.  
+  
+Cada módulo de ejercicios tiene su nmódulo de tests.  
   
 Hay dos formas de ejecutar los tests:
 
@@ -123,15 +125,25 @@ pytest tests/test5.py -v --cov=src.ejer5 --cov-report=term-missing
 ## Test de estilo con linter
 Un linter es una guía interactiva de estilo para adaptar el código a una de las normas PEP, en este caso PEP20.  
 El linter usado es `pylint`.  
-Para correr el evaluador pylint usa lo siguiente (siempre estando en la carpeta donde has descargado el proyecto):  
+La ejecución de los evaluadores devolverá una puntuación sobre 10 de todo lo que ha evaluado como un conjunto. Sólo muestra los posibles inconvenientes de estilo encontrados y dónde localizarlos, y la nota final. Cuanto más corto el resultado del test, mejor ;). Todo archivo al que no haga referencia la salida, es que no tiene avisos.  
+Para ejecutarlo, se sigue el formato de comando:  
+
 ```
-pylint <archivo a testear>.py
+pylint <archivo a testear>.<extensión>
+```
+
+Para correr el evaluador pylint en todos los archivos .py de la carpeta actual, usa lo siguiente (siempre estando en la carpeta donde has descargado el proyecto): 
+  
+```
+pylint *.py
 ```  
 Si quieres hacer el test sobre toda la carpeta de `src/` escribe:  
+
 ```
 pylint ./src/*.py
 ```  
 Si quieres hacer el test sobre toda la carpeta de `tests/` escribe:  
+
 ```
 pylint ./tests/*.py
 ```  
