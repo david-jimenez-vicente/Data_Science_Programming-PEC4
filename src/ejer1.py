@@ -41,6 +41,7 @@ def run():
     """
     Ejecuta el análisis del ejercicio 1 usando las funciones definidas antes
     """
+    print("\n=== Ejercicio 1: Importación del dataset y EDA ===\n")
 
     # Cargamos el dataset
     df1 = load_dataset()

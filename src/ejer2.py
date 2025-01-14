@@ -43,6 +43,7 @@ def run():
     """
     Ejecuación principal del módulo 2
     """
+    print("\n=== Ejercicio 2: Anonimización y limpieza ===\n")
 
     # Cargamos el dataset original
     df2 = load_dataset()
