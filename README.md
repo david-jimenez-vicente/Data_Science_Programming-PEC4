@@ -19,7 +19,7 @@ Este proyecto es una solución a los ejercicios de la PEC4 de Programación para
 
 ### 1. Descargar y configurar el Proyecto
 Ejecuta  en tu terminal lo siguiente para clonar el repositorio:  
-```Python
+```python  
 git clone https://github.com/david-jimenez-vicente/Data_Science_Programming-PEC4.git
 ```  
 Y con esto vamos a la carpeta del repositorio clonado:  
