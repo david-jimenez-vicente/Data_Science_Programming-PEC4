@@ -9,15 +9,15 @@ from src import ejer1, ejer2, ejer3, ejer4, ejer5
 def run_all():
     """Ejecuta todos los ejercicios en orden"""
     print("\nEjecutando todos los ejercicios...\n")
-    print("\n=== Ejercicio 1: Importación del dataset y EDA ===\n")
+    #print("\n=== Ejercicio 1: Importación del dataset y EDA ===\n")
     ejer1.run()
-    print("\n=== Ejercicio 2: Anonimización y limpieza ===\n")
+    #print("\n=== Ejercicio 2: Anonimización y limpieza ===\n")
     ejer2.run()
-    print("\n=== Ejercicio 3: Agrupamiento de minutos e histograma ===\n")
+    #print("\n=== Ejercicio 3: Agrupamiento de minutos e histograma ===\n")
     ejer3.run()
-    print("\n=== Ejercicio 4: Análisis de clubs ===\n")
+    #print("\n=== Ejercicio 4: Análisis de clubs ===\n")
     ejer4.run()
-    print("\n=== Ejercicio 5: Análisis UCSC ===\n")
+    #print("\n=== Ejercicio 5: Análisis UCSC ===\n")
     ejer5.run()
 
 def run_ejer(num):
