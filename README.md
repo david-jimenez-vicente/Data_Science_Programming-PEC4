@@ -15,11 +15,14 @@ Este proyecto es una solución a los ejercicios de la PEC4 de Programación para
 - **`dataframes/`**: Carpeta para el guardado de los dataframes manipulados.
 - **`img/`**: Carpeta para guardar el histograma.
 
+Además, todo el proyecto está escrito en Python, por lo que debes asegurarte de tener instalado el framework: [Página oficial](https://www.python.org/downloads/).  
+También tienes unos potentes [recursos de Python](https://es.python.org/aprende-python/). 
+
 ## Uso
 
 ### 1. Descargar y configurar el Proyecto
 Ejecuta  en tu terminal lo siguiente para clonar el repositorio:  
-```python
+```
 git clone https://github.com/david-jimenez-vicente/Data_Science_Programming-PEC4.git
 ```  
 Y con esto vamos a la carpeta del repositorio clonado:  
