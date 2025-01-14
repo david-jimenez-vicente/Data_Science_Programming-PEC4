@@ -4,13 +4,16 @@ Este proyecto es una solución a los ejercicios de la PEC4 de Programación para
 
 ## Estructura del Proyecto
 
-- **`main.py`**: Archivo principal del programa.
+- **`main.py`**: Archivo principal del menú de los ejercicios.
+- **`run_tests.py`**: Archivo principal del menú de tests.
+- **`LICENSE`**: Licencia de uso y distribución.
+- **`requirements.txt`**: Instalación automática de las librerías necesarias.
+- **`README.md`**: Este archivo de proyecto que estás leyendo, en formato [MarkDown](https://markdown.es).
 - **`src/`**: Carpeta que contiene los módulos de los ejercicios.
-  - **`ejer1.py`**: Importa el dataset, se reutiliza. Procesa los datos para listar los clubes únicos.
-  - **`ejer2.py`**: Calcula el tiempo promedio por club.
-  - **`ejer3.py`**: Identifica al ciclista con el menor tiempo registrado.
-  - **`ejer4.py`**: Cuenta el número total de ciclistas por club.
-  - **`ejer5.py`**: Genera un resumen del tiempo total acumulado por club.
+- **`tests/`**: Carpeta con los módulos de tests.
+- **`data/`**: Carpeta con el dataset original.
+- **`dataframes/`**: Carpeta para el guardado de los dataframes manipulados.
+- **`img/`**: Carpeta para guardar el histograma.
 
 ## Uso
 
