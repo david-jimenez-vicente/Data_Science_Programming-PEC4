@@ -80,10 +80,55 @@ Al abrir el programa, verás el menú de ejecución. Permite ejecutar todos los 
    - Opción `2`: Menú para ejecutar los ejercicios uno a uno.
    - Opción `0`: Salir del programa.
 
-### Tests
-Cada módulo incluye una función de tests que valida su funcionalidad.  
-Los tests se pueden ejecutar automáticamente al finalizar un ejercicio o manualmente desde el menú.
+## Tests de ejecución
+En la carpeta `tests/` se incluye un módulo de test para cada módulo de ejercicio.
+Para los test se ha usado la librería `pytest`, y se ha añadido el plugin de pytest `pytest-cov`, que revisa la cobertura de las pruebas al ejecutar cada test.  
 
+Cada módulo incluye una función de tests que valida su funcionalidad.  
+  
+Hay dos formas de ejecutar los tests:
+
+1. Ejecutar el sistema de tests interactivo con el menú:  
+```
+python3 run_tests.py
+```  
+Este script permite:
+  - Ejecutar todos los tests de una sola vez y ver la cobertura total.
+  - Ejecutar tests ejercicio por ejercicio y ver la cobertura individual.  
+  - Obtener los prompts de terminal para correr los tests individualmente a mano sin pasar por el menú.
+
+2. Por si no deseas ejecutar el programa de los tests, aquí tienes los comandos de tests individuales para terminal:  
+```
+pytest tests/test1.py -v --cov=src.ejer1 --cov-report=term-missing
+```
+```
+pytest tests/test2.py -v --cov=src.ejer2 --cov-report=term-missing
+```
+```
+pytest tests/test3.py -v --cov=src.ejer3 --cov-report=term-missing
+```
+```
+pytest tests/test4.py -v --cov=src.ejer4 --cov-report=term-missing
+```
+```
+pytest tests/test5.py -v --cov=src.ejer5 --cov-report=term-missing
+```  
+  
+## Test de estilo con linter
+Un linter es una guía interactiva de estilo para adaptar el código a una de las normas PEP, en este caso PEP20.  
+El linter usado es `pylint`.  
+Para correr el evaluador pylint usa lo siguiente (siempre estando en la carpeta donde has descargado el proyecto):  
+```
+pylint <archivo a testear>.py
+```  
+Si quieres hacer el test sobre toda la carpeta de `src/` escribe:  
+```
+pylint ./src/*.py
+```  
+Si quieres hacer el test sobre toda la carpeta de `tests/` escribe:  
+```
+pylint ./tests/*.py
+```  
 
 ## Notas Adicionales
 
@@ -100,3 +145,4 @@ Los tests se pueden ejecutar automáticamente al finalizar un ejercicio o manual
 * pytest: [https://docs.pytest.org/en/stable/](https://docs.pytest.org/en/stable/)
 * pytest-cov: [https://pypi.org/project/pytest-cov/](https://pypi.org/project/pytest-cov/)
 * pylint: [https://pypi.org/project/pylint/](https://pypi.org/project/pylint/)
+* setuptools: [https://pypi.org/project/setuptools/](https://pypi.org/project/setuptools/)

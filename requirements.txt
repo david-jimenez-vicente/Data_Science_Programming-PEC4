@@ -5,3 +5,4 @@ faker
 pytest
 pytest-cov
 pylint
+setuptools
