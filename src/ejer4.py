@@ -79,7 +79,7 @@ def analyze_clubs(df4):
 
 def run():
     """Ejecuta el análisis del ejercicio 4"""
-    print("\n=== Ejercicio 4: Análisis de clubs ===\n")
+    print("\n\n\n============= Ejercicio 4: Análisis de clubs =============\n")
 
     # Obtenemos el DataFrame del ejercicio anterior
     df4 = pd.read_csv("./dataframes/dataframe3.csv")

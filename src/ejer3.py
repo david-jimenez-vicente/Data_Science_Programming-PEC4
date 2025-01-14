@@ -60,7 +60,8 @@ def create_time_histogram(df3):
 
 def run():
     """Ejecuta el ejercicio 3"""
-    print("\n=== Ejercicio 3: Agrupamiento de minutos e histograma ===\n")
+    print("\n\n\n============= Ejercicio 3: Agrupamiento de minutos e histograma\
+     =============\n")
 
     # Obtenemos DataFrame limpio del ejercicio anterior
     df3 = pd.read_csv("./dataframes/dataframe2.csv")

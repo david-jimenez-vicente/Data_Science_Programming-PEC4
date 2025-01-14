@@ -43,7 +43,7 @@ def get_best_ucsc_cyclist(df5):
 
 def run():
     """Ejecuta el análisis del ejercicio 5"""
-    print("\n=== Ejercicio 5: Análisis UCSC ===\n")
+    print("\n\n\n============= Ejercicio 5: Análisis UCSC =============\n")
 
     # Obtenemos el DataFrame del ejercicio anterior
     df5 = pd.read_csv("./dataframes/dataframe4.csv")
