@@ -7,9 +7,7 @@ setup(
     author='José David Jiménez Vicente',
     author_email='jdjvjdjv@gmail.com',
     url='https://github.com/david-jimenez-vicente/Data_Science_Programming-PEC4',
-    packages=find_packages(where="src"),
-    package_dir={'': 'src'},
-    include_package_data=True,
+    packages=find_packages(),  # Cambiado esto
     install_requires=[
         'pandas',
         'numpy',
@@ -22,7 +20,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'pec4=main:main',
+            'pec4=src.main:main',  # Modificado esto para apuntar a src.main
         ],
     },
     data_files=[
